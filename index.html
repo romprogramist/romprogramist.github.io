@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="socket.io/socket.io.js"></script>
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <style>
+            .krestiki_noliki {
+                margin: auto;
+                width: 490px;
+            }
+
+            .krestiki_noliki .block {
+                height: 150px;
+                width: 150px;
+                float: left; 
+                margin: 5px;
+                font-size: 3em;
+                background-color: rgb(248, 248, 248);
+                
+            }
+
+            #message {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+        </style>
+        <div id="message">Waiting for an opponent...</div>
+
+        <div class="krestiki_noliki">
+            <p class="result">Ваш ход!</p>	
+            <button class="block cell1"></button>
+            <button class="block cell2"></button>
+            <button class="block cell3"></button>
+            <button class="block cell4"></button>
+            <button class="block cell5"></button>
+            <button class="block cell6"></button>
+            <button class="block cell7"></button>
+            <button class="block cell8"></button>
+            <button class="block cell9"></button>	
+        </div>
+    </body>
+</html>
